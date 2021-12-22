@@ -1,0 +1,223 @@
+body{
+    background: #1389C5;
+    background: -moz-linear-gradient(left, #1389C5 0%, #589EA4 47%, #1389C5 100%);
+    background: -webkit-linear-gradient(left, #1389C5 0%, #589EA4 47%, #1389C5 100%);
+    background: linear-gradient(to right, #1389C5 0%, #589EA4 47%, #1389C5 100%);
+}
+
+/*HEADER Y BARRA DE NAVEGACION*/
+header{
+    display: grid;
+    width: 95%;
+    max-width: 95%;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+header.menu{
+    align-content: space-between;
+}
+nav{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+nav li a{
+    color: aliceblue;
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav li{
+    float:right; /*Hacer que los elementos se muestren a la derecha*/
+    width: auto;
+    padding: 0 10px;
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+#titulo{
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    text-align: center;
+}
+
+div.informacion {
+    width: 80%;
+    margin: 20px auto;
+    background-color: transparent;
+    color: rgb(233, 224, 224);
+    padding: 15px;
+}
+
+#info{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+div.informacion img.derecha {
+    float: right;
+    margin-left: 15px;
+    height: 400px;
+    width: 400px;
+}
+
+div.reset {
+    clear: both;
+}
+
+.grid{
+    width: 90%;
+    max-width: 95%;
+    margin: 1em auto;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid > .image{
+    height: 250px;
+    min-width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.subtitulos{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9em;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+.parrafos{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    width: 90%;
+    text-align: justify;
+    margin: 1% 5%;
+}
+
+/*Ajustando imagenes de la lista*/
+.grid2{
+    width: 95%;
+    margin: 1.6em auto;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2,1fr);
+}
+
+ul{
+    text-align: left;
+}
+
+ul> li{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: azure;
+}
+
+.imagen-lista{
+    display: flex;
+}
+
+.imagen-lista>.image2{
+    height: 400px;
+    min-width: auto;
+    width: auto;
+    margin:auto;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5px;
+}
+
+footer >h4{
+    text-align: left;
+    align-content: left;
+    margin-left: 15%;
+}
+
+footer > p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+/*Personalizando Tabla*/
+.tabla{
+    margin: 50px auto;
+    padding: 0;
+}
+
+.default {
+    width: 90%;
+    margin: auto;
+}
+
+th, td {
+    width: 25%;  /*Ancho de las celdas*/
+    vertical-align:middle; /*Alinear contenido verticalmente*/
+    border: 1px solid rgb(10, 73, 133);
+    text-align: center;
+    /* padding:5px 30px; TOP RIGTH BOTTOM LEFT,   top and bottom | left and right */
+    padding: 10px;
+}
+
+.titulo_tabla{
+    font-size: 1.5em;
+    color: rgb(227, 215, 250);
+    text-shadow: 1px 1px 2px black;
+}
+
+.pez{
+    padding: auto;
+    color: blanchedalmond;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px rgb(11, 69, 231);
+}
+
+.descripcion{
+    font-size: 1em;
+    color: #082e31;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tabla_imagen{
+    height: 130px;
+    width: 200px;
+}
+
+/*GALERIA PECES*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(100px,auto);
+    width: 90%;
+    max-width: 95%;
+    gap: 1em;
+    margin: 2em auto;
+}
+
+.galeria-img{
+    max-height: auto;
+    min-height: auto;
+    height: 250px;
+    min-width: auto;
+    max-width: 100%; /*Ancho maximo al 100%*/
+}
